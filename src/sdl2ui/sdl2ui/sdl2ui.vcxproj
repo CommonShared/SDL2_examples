@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{3B8FA1E6-94EC-4911-9F2E-E10D63202565}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sdl2ui</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libpng.lib;jpeg-9.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;freetype.lib;SDL2_image.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)src\simsun.ttf $(OutDir) /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libpng.lib;jpeg-9.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;freetype.lib;SDL2_image.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)src\simsun.ttf $(OutDir) /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libpng.lib;jpeg-9.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;freetype.lib;SDL2_image.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)src\simsun.ttf $(OutDir) /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration);$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libpng.lib;jpeg-9.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;freetype.lib;SDL2_image.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)src\simsun.ttf $(OutDir) /E /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\EGalax.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\UIButton.cpp" />
+    <ClCompile Include="..\src\UICanvasControl.cpp" />
+    <ClCompile Include="..\src\UICaption.cpp" />
+    <ClCompile Include="..\src\UIControl.cpp" />
+    <ClCompile Include="..\src\UIElement.cpp" />
+    <ClCompile Include="..\src\UIGUI.cpp" />
+    <ClCompile Include="..\src\UIImage.cpp" />
+    <ClCompile Include="..\src\UIImageButton.cpp" />
+    <ClCompile Include="..\src\UIMenu.cpp" />
+    <ClCompile Include="..\src\UIScreen.cpp" />
+    <ClCompile Include="..\src\UITextField.cpp" />
+    <ClCompile Include="..\src\UITimer.cpp" />
+    <ClCompile Include="..\src\UITouchCalibrator.cpp" />
+    <ClCompile Include="..\src\UITouchCalibratorControl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\EGalax.h" />
+    <ClInclude Include="..\src\MQTTScreen.h" />
+    <ClInclude Include="..\src\UIButton.h" />
+    <ClInclude Include="..\src\UICanvasControl.h" />
+    <ClInclude Include="..\src\UICaption.h" />
+    <ClInclude Include="..\src\UIControl.h" />
+    <ClInclude Include="..\src\UIElement.h" />
+    <ClInclude Include="..\src\UIGUI.h" />
+    <ClInclude Include="..\src\UIHumanInput.h" />
+    <ClInclude Include="..\src\UIImage.h" />
+    <ClInclude Include="..\src\UIImageButton.h" />
+    <ClInclude Include="..\src\UIMenu.h" />
+    <ClInclude Include="..\src\UIScreen.h" />
+    <ClInclude Include="..\src\UITextField.h" />
+    <ClInclude Include="..\src\UITimer.h" />
+    <ClInclude Include="..\src\UITouchCalibrator.h" />
+    <ClInclude Include="..\src\UITouchCalibratorControl.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
