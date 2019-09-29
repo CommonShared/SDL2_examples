@@ -1,0 +1,21 @@
+[submodule "src/SDL2"]
+	path = src/SDL2
+	url = https://github.com/CommonShared/SDL2.git
+[submodule "src/SDL2_image"]
+	path = src/SDL2_image
+	url = https://github.com/CommonShared/SDL2_image.git
+[submodule "src/SDL2_ttf"]
+	path = src/SDL2_ttf
+	url = https://github.com/CommonShared/SDL2_ttf.git
+[submodule "src/freetype"]
+	path = src/freetype
+	url = https://github.com/CommonShared/freetype.git
+[submodule "src/jpeg-9"]
+	path = src/jpeg-9
+	url = https://github.com/CommonShared/jpeg-9.git
+[submodule "src/libpng"]
+	path = src/libpng
+	url = https://github.com/CommonShared/libpng.git
+[submodule "src/zlib"]
+	path = src/zlib
+	url = https://github.com/CommonShared/zlib.git
