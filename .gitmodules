@@ -19,3 +19,6 @@
 [submodule "src/zlib"]
 	path = src/zlib
 	url = https://github.com/CommonShared/zlib.git
+[submodule "src/SDL2_mixer"]
+	path = src/SDL2_mixer
+	url = https://github.com/CommonShared/SDL2_mixer.git
