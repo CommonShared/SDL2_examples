@@ -60,9 +60,21 @@ void UITextField::RenderText()
 		SDL_DestroyTexture(mTextShadowTexture);
 		mTextShadowTexture = NULL;
 	}
-
-	mTextTexture = UIGUI::RenderText(mString, mFontPath, mFontSize, mHasFocus ? UIGUI::FocusColor : mColor);
-	mTextShadowTexture = UIGUI::RenderText(mString, mFontPath, mFontSize, UIGUI::ShadowColor);
+	if (mString.empty())
+	{
+		mString = " ";
+		mTextTexture = UIGUI::RenderText(mString, mFontPath, mFontSize, mHasFocus ? UIGUI::FocusColor : mColor);
+		mTextShadowTexture = UIGUI::RenderText(mString, mFontPath, mFontSize, UIGUI::ShadowColor);
+	}
+	else
+	{
+		if (*mString.begin() != ' ')
+		{
+			mString.insert(0, 1, ' ');
+		}
+		mTextTexture = UIGUI::RenderText(mString, mFontPath, mFontSize, mHasFocus ? UIGUI::FocusColor : mColor);
+		mTextShadowTexture = UIGUI::RenderText(mString, mFontPath, mFontSize, UIGUI::ShadowColor);
+	}
 	UIScreen::setNeedRedraw();
 }
 
@@ -70,6 +82,7 @@ void UITextField::Render()
 {
 	SDL_Rect rect = mRect;
 	int32_t width = 0, height = 0;
+
 	if (mTextTexture == NULL)
 	{
 		return;
@@ -179,7 +192,7 @@ uint32_t UITextField::HandleKeyDownEvent(SDL_Event *inEvent)
 			case SDLK_BACKSPACE:
 			case SDLK_DELETE:
 				if (mString.length() > 1) {
-					mString = mString.substr(0, mString.length()-1);
+					mString = mString.substr(0, mString.length() - ((((unsigned char)mString.at(mString.length() - 1)) > 0x80) ? 3 : 1));
 				} else {
 					mString.assign("");
 				}

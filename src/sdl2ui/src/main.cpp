@@ -37,7 +37,38 @@ void handleSecondScreen(UIGUI *ui, UIScreen *screen)
 		ui->run(screen, &event);
 	} while(event.user.code != kReturnButtonPress);
 }
+#include <stdio.h>
+#include <windows.h>
+static FILE* pSTDIN;
+static FILE* pSTDOUT;
+static FILE* pSTDERR;
+__inline static
+void InitConsole()
+{
+	AllocConsole();
+	pSTDIN = freopen("CONIN$", "rb", stdin);
+	pSTDOUT = freopen("CONOUT$", "wb", stdout);
+	pSTDERR = freopen("CONOUT$", "rb", stderr);
+}
+__inline static
+void ExitConsole()
+{
+	getchar();
 
+	if (pSTDERR)
+	{
+		fclose(pSTDERR);
+	}
+	if (pSTDOUT)
+	{
+		fclose(pSTDOUT);
+	}
+	if (pSTDIN)
+	{
+		fclose(pSTDIN);
+	}
+	FreeConsole();
+}
 int main(int argc, char ** argv)
 {
 	UICaption *gCaption;
@@ -45,11 +76,13 @@ int main(int argc, char ** argv)
 	UIButton *gMenuButton;
 	UIButton *screenButton;
 
+	//InitConsole();
+
 	(void) SDL_RegisterEvents(1); // First call seem to return SDL_USEREVENT :-/
 
 	SDL_Event event;
-	SDL_Color bgColor1 = {0, 0, 128, 255};
-	SDL_Color bgColor2 = {128, 128, 244, 255};
+	SDL_Color bgColor1 = {0, 128, 128, 255};
+	SDL_Color bgColor2 = {128, 128, 222, 255};
 	
 
 	printf("Creating UI\n");
@@ -100,6 +133,7 @@ int main(int argc, char ** argv)
 						printf("Got %d from menu\n", cmd);
 						switch(cmd) {
 							case kQuit:
+								ExitConsole();
 								exit(0);
 								break;
 						}
@@ -109,5 +143,6 @@ int main(int argc, char ** argv)
 		}
 	} while(event.user.code != event_Quit);
 	delete ui;
+	ExitConsole();
 	return 0;
 }
