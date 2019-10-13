@@ -1503,7 +1503,9 @@ static char get_media_type_char(enum AVMediaType type)
 static const AVCodec *next_codec_for_id(enum AVCodecID id, const AVCodec *prev,
                                         int encoder)
 {
-    while ((prev = av_codec_next(prev))) {
+    //while ((prev = av_codec_next(prev))) {
+	void* i = 0;
+    while ((prev = av_codec_iterate(&i))) {
         if (prev->id == id &&
             (encoder ? av_codec_is_encoder(prev) : av_codec_is_decoder(prev)))
             return prev;

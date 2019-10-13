@@ -19,7 +19,7 @@ extern "C" {
 #include <SDL_thread.h>
 }
 
-#define IS_FFMPEG_VERSION_NEW		0x00
+#define IS_FFMPEG_VERSION_NEW		0x01
 
 #define MAX_AUDIO_NUM				128
 #define MAX_VIDEO_NUM				128
