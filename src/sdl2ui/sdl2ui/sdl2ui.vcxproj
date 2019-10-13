@@ -94,7 +94,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -113,7 +113,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -134,7 +134,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -157,7 +157,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)src;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
