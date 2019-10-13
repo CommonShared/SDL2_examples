@@ -15,184 +15,109 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Conspiracy\src\main.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_framerate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\alien.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_gfxPrimitives.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\alien_bilu.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_imageFilter.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\alien_etemer.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_rotozoom.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\alien_varginha.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\SDL_gui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\arrow.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_View.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\button.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\camera.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_TopBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\camera_lever.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_TextView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\camera_switch.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_TextUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\camera_system.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Switch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\chair.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_StatusBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\choice.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Slider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\choose_stage_scene.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_shapes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\computer_table.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_ScrollView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\door.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_RadioButtonGroup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\door_switch.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_RadioButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\door_system.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Preference.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\finish_point.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_PopupView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\finish_scene.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_MessageBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\game_scene.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_MenuBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\ground.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\guard.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_List.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\header.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Label.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\lose_scene.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_ImageView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\menu_scene.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\paper.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_IconView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\paper_table.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Fonts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\player.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_EditText.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\stage_five.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\stage_four.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_ComboBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\stage_one.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_CheckBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\stage_three.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\stage_two.cpp">
+    <ClCompile Include="SDL_gui\SDL2_gui\GUI_App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\table.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\test.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\tutorial_scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\wall.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\game\src\win_scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\animation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\animation_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\animation_quad.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\audio.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\collision_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\field_of_vision.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\game_object.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\input_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\line.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\progress_bar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\rectangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\save_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\scene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\scene_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\sdl_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\sprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\text.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\text_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\timer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Conspiracy\engine\src\window_manager.cpp">
+    <ClCompile Include="SDL_gui\tests\0020_SDL_ttf\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
