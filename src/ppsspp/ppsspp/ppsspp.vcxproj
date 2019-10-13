@@ -19,8 +19,66 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cmdutils.c" />
-    <ClCompile Include="main-ffplay.c" />
+    <ClCompile Include="Conspiracy\engine\src\animation.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\animation_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\animation_quad.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\audio.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\collision_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\engine.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\field_of_vision.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\game_object.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\input_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\line.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\progress_bar.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\rectangle.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\save_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\scene.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\scene_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\sdl_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\sprite.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\text.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\text_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\timer.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\window_manager.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien_bilu.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien_etemer.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien_varginha.cpp" />
+    <ClCompile Include="Conspiracy\game\src\arrow.cpp" />
+    <ClCompile Include="Conspiracy\game\src\button.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera_lever.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera_switch.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera_system.cpp" />
+    <ClCompile Include="Conspiracy\game\src\chair.cpp" />
+    <ClCompile Include="Conspiracy\game\src\choice.cpp" />
+    <ClCompile Include="Conspiracy\game\src\choose_stage_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\computer_table.cpp" />
+    <ClCompile Include="Conspiracy\game\src\door.cpp" />
+    <ClCompile Include="Conspiracy\game\src\door_switch.cpp" />
+    <ClCompile Include="Conspiracy\game\src\door_system.cpp" />
+    <ClCompile Include="Conspiracy\game\src\finish_point.cpp" />
+    <ClCompile Include="Conspiracy\game\src\finish_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\game_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\ground.cpp" />
+    <ClCompile Include="Conspiracy\game\src\guard.cpp" />
+    <ClCompile Include="Conspiracy\game\src\header.cpp" />
+    <ClCompile Include="Conspiracy\game\src\lose_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\menu_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\paper.cpp" />
+    <ClCompile Include="Conspiracy\game\src\paper_table.cpp" />
+    <ClCompile Include="Conspiracy\game\src\player.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_five.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_four.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_one.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_three.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_two.cpp" />
+    <ClCompile Include="Conspiracy\game\src\table.cpp" />
+    <ClCompile Include="Conspiracy\game\src\test.cpp" />
+    <ClCompile Include="Conspiracy\game\src\tutorial_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\wall.cpp" />
+    <ClCompile Include="Conspiracy\game\src\win_scene.cpp" />
+    <ClCompile Include="Conspiracy\src\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -100,13 +158,13 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_net\src\SDL2_net;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>XCOPY $(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
@@ -120,13 +178,13 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_net\src\SDL2_net;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>XCOPY $(SolutionDir)ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
@@ -142,15 +200,15 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_net\src\SDL2_net;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>XCOPY $(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
@@ -166,15 +224,15 @@
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf;$(SolutionDir)..\SDL2_net\src\SDL2_net;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>XCOPY $(SolutionDir)ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
