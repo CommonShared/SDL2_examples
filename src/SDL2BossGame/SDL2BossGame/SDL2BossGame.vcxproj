@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SDL2-Game\assets\animation.cpp" />
+    <ClCompile Include="SDL2-Game\assets\background.cpp" />
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_AI.cpp" />
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_Controller.cpp" />
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_Head.cpp" />
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_TailSegment.cpp" />
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_TailSegmentConnector.cpp" />
+    <ClCompile Include="SDL2-Game\assets\missile.cpp" />
+    <ClCompile Include="SDL2-Game\assets\NAV\nav_graph.cpp" />
+    <ClCompile Include="SDL2-Game\assets\NAV\nav_path.cpp" />
+    <ClCompile Include="SDL2-Game\assets\NAV\nav_point.cpp" />
+    <ClCompile Include="SDL2-Game\assets\physicsObj.cpp" />
+    <ClCompile Include="SDL2-Game\assets\player.cpp" />
+    <ClCompile Include="SDL2-Game\assets\projectile.cpp" />
+    <ClCompile Include="SDL2-Game\assets\terrain.cpp" />
+    <ClCompile Include="SDL2-Game\base.cpp" />
+    <ClCompile Include="SDL2-Game\gamemaster.cpp" />
+    <ClCompile Include="SDL2-Game\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL2-Game\assets\animation.h" />
+    <ClInclude Include="SDL2-Game\assets\background.h" />
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_AI.h" />
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_Controller.h" />
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_Head.h" />
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_TailSegment.h" />
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_TailSegmentConnector.h" />
+    <ClInclude Include="SDL2-Game\assets\missile.h" />
+    <ClInclude Include="SDL2-Game\assets\NAV\nav_graph.h" />
+    <ClInclude Include="SDL2-Game\assets\NAV\nav_path.h" />
+    <ClInclude Include="SDL2-Game\assets\NAV\nav_point.h" />
+    <ClInclude Include="SDL2-Game\assets\physicsObj.h" />
+    <ClInclude Include="SDL2-Game\assets\player.h" />
+    <ClInclude Include="SDL2-Game\assets\projectile.h" />
+    <ClInclude Include="SDL2-Game\base.h" />
+    <ClInclude Include="SDL2-Game\defs.h" />
+    <ClInclude Include="SDL2-Game\gamemaster.h" />
+    <ClInclude Include="SDL2-Game\random.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D866E3F2-FC91-4AB4-9D74-BB95EA890CD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ppsspp</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>MKDIR $(OutDir)resource
+XCOPY $(SolutionDir)SDL2BossGame\SDL2-Game\resource $(OutDir)resource /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY $(SolutionDir)ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

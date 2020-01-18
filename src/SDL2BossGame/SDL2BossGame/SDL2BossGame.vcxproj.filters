@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{caa420ce-3305-4774-baf4-ce4230ddc823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\NAV">
+      <UniqueIdentifier>{d286b9f3-693e-40fc-8533-e1f0719d949d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\BOSS">
+      <UniqueIdentifier>{622b6ef7-4856-4772-a936-197afd855329}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SDL2-Game\base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\gamemaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\animation.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\background.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\missile.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\physicsObj.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\player.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\projectile.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\terrain.cpp">
+      <Filter>assets</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\NAV\nav_graph.cpp">
+      <Filter>assets\NAV</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\NAV\nav_path.cpp">
+      <Filter>assets\NAV</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\NAV\nav_point.cpp">
+      <Filter>assets\NAV</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_AI.cpp">
+      <Filter>assets\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_Controller.cpp">
+      <Filter>assets\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_Head.cpp">
+      <Filter>assets\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_TailSegment.cpp">
+      <Filter>assets\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="SDL2-Game\assets\BOSS\boss_TailSegmentConnector.cpp">
+      <Filter>assets\BOSS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SDL2-Game\base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\gamemaster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\animation.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\background.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\missile.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\physicsObj.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\player.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\projectile.h">
+      <Filter>assets</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\NAV\nav_graph.h">
+      <Filter>assets\NAV</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\NAV\nav_path.h">
+      <Filter>assets\NAV</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\NAV\nav_point.h">
+      <Filter>assets\NAV</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_AI.h">
+      <Filter>assets\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_Controller.h">
+      <Filter>assets\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_Head.h">
+      <Filter>assets\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_TailSegment.h">
+      <Filter>assets\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2-Game\assets\BOSS\boss_TailSegmentConnector.h">
+      <Filter>assets\BOSS</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
