@@ -19,41 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_framerate.c" />
-    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_gfxPrimitives.c" />
-    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_imageFilter.c" />
-    <ClCompile Include="SDL_gui\SDL2_gfx\SDL2_rotozoom.c" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_App.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Button.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_CheckBox.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_ComboBox.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Config.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_EditText.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Fonts.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_IconView.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_image.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_ImageView.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Label.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_List.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Menu.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_MenuBar.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_MessageBox.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_PopupView.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Preference.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_RadioButton.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_RadioButtonGroup.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_ScrollView.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_shapes.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Slider.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_StatusBar.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Switch.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_TextUtil.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_TextView.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_TopBar.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_Utils.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\GUI_View.cpp" />
-    <ClCompile Include="SDL_gui\SDL2_gui\SDL_gui.cpp" />
-    <ClCompile Include="SDL_gui\tests\0020_SDL_ttf\src\main.cpp" />
+    <ClCompile Include="cmdutils.c" />
+    <ClCompile Include="main-ffplay.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -160,7 +127,7 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>XCOPY $(SolutionDir)ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
+      <Command>XCOPY $(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -206,7 +173,7 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>XCOPY $(SolutionDir)ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
+      <Command>XCOPY $(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\*.dll $(OutDir) /Y /E</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
