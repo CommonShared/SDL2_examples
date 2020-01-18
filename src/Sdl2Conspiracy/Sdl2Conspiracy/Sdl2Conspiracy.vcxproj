@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Conspiracy\engine\src\animation.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\animation_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\animation_quad.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\audio.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\collision_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\engine.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\field_of_vision.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\game_object.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\input_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\line.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\progress_bar.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\rectangle.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\save_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\scene.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\scene_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\sdl_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\sprite.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\text.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\text_manager.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\timer.cpp" />
+    <ClCompile Include="Conspiracy\engine\src\window_manager.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien_bilu.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien_etemer.cpp" />
+    <ClCompile Include="Conspiracy\game\src\alien_varginha.cpp" />
+    <ClCompile Include="Conspiracy\game\src\arrow.cpp" />
+    <ClCompile Include="Conspiracy\game\src\button.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera_lever.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera_switch.cpp" />
+    <ClCompile Include="Conspiracy\game\src\camera_system.cpp" />
+    <ClCompile Include="Conspiracy\game\src\chair.cpp" />
+    <ClCompile Include="Conspiracy\game\src\choice.cpp" />
+    <ClCompile Include="Conspiracy\game\src\choose_stage_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\computer_table.cpp" />
+    <ClCompile Include="Conspiracy\game\src\door.cpp" />
+    <ClCompile Include="Conspiracy\game\src\door_switch.cpp" />
+    <ClCompile Include="Conspiracy\game\src\door_system.cpp" />
+    <ClCompile Include="Conspiracy\game\src\finish_point.cpp" />
+    <ClCompile Include="Conspiracy\game\src\finish_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\game_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\ground.cpp" />
+    <ClCompile Include="Conspiracy\game\src\guard.cpp" />
+    <ClCompile Include="Conspiracy\game\src\header.cpp" />
+    <ClCompile Include="Conspiracy\game\src\lose_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\menu_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\paper.cpp" />
+    <ClCompile Include="Conspiracy\game\src\paper_table.cpp" />
+    <ClCompile Include="Conspiracy\game\src\player.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_five.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_four.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_one.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_three.cpp" />
+    <ClCompile Include="Conspiracy\game\src\stage_two.cpp" />
+    <ClCompile Include="Conspiracy\game\src\table.cpp" />
+    <ClCompile Include="Conspiracy\game\src\test.cpp" />
+    <ClCompile Include="Conspiracy\game\src\tutorial_scene.cpp" />
+    <ClCompile Include="Conspiracy\game\src\wall.cpp" />
+    <ClCompile Include="Conspiracy\game\src\win_scene.cpp" />
+    <ClCompile Include="Conspiracy\src\main.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{D866E3F2-FC91-4AB4-9D74-BB95EA890CD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ppsspp</RootNamespace>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>MKDIR $(OutDir)assets
+XCOPY $(SolutionDir)Sdl2Conspiracy\Conspiracy\assets $(OutDir)assets /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>MKDIR $(OutDir)assets
+XCOPY $(SolutionDir)Sdl2Conspiracy\Conspiracy\assets $(OutDir)assets /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>MKDIR $(OutDir)assets
+XCOPY $(SolutionDir)Sdl2Conspiracy\Conspiracy\assets $(OutDir)assets /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ffmpeg-dev\include;$(SolutionDir)..\SDL2\src\SDL2-2.0.10\include;$(SolutionDir)..\SDL2_image\src\SDL2_image-2.0.5;$(SolutionDir)..\SDL2_ttf\src\SDL2_ttf-2.0.15;$(SolutionDir)..\SDL2_net\src\SDL2_net-2.0.1;$(SolutionDir)..\SDL2_mixer\src\SDL2_mixer-2.0.4;$(ProjectDir);$(ProjectDir)Conspiracy/src;$(ProjectDir)Conspiracy/game/include;$(ProjectDir)Conspiracy/engine/include;$(ProjectDir)SDL_gui\SDL2_gfx;$(ProjectDir)SDL_gui\SDL2_gui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ffmpeg-dev\lib\$(Platform)\;$(SolutionDir)..\SDL2\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_image\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_mixer\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_net\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\SDL2_ttf\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\jpeg-9\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\freetype\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\libpng\pub\libs\$(Platform)\$(Configuration)\;$(SolutionDir)..\zlib\pub\libs\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;native_midi.lib;timidity.lib;SDL2_ttf.lib;jpeg-9.lib;libpng.lib;freetype.lib;zlib.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>MKDIR $(OutDir)assets
+XCOPY $(SolutionDir)Sdl2Conspiracy\Conspiracy\assets $(OutDir)assets /Y /E</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
